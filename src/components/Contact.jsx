@@ -10,6 +10,15 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // ✅ Email regex
+    const emailField = form.current.user_email.value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(emailField)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
     emailjs
       .sendForm("service_ahd0flq", "template_9wa9uro", form.current, {
         publicKey: "K1ujv0NGZNC-WjZ09",

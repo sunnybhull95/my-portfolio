@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import img from "../assets/Homepage.png";
 import img2 from "../assets/carhomepage.png";
+import img3 from "../assets/portfolio.png";
 
 const projects = [
   {
@@ -12,15 +13,15 @@ const projects = [
   },
   {
     title: "Car-Rental Website",
-    desc: "React + TailwindCss + Springboot",
+    desc: "React + TailwindCss + Springboot + Mysql",
     img: img2,
     link: "https://github.com/sunnybhull95/car-rental-fullstack-java",
   },
   {
-    title: "City Skyline Gallery",
-    desc: "Masonry grid and lazy loading gallery.",
-    img: "/images/city-skyline.jpg",
-    link: "https://city-skyline-gallery.netlify.app",
+    title: "Porfolio Website",
+    desc: "React + TailwindCss + FramerMotion",
+    img: img3,
+    link: "https://sunnybhull-portfolio.netlify.app/ ",
   },
 ];
 
@@ -57,13 +58,13 @@ export default function Projects() {
             href={p.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative bg-white/5 border border-white/10 p-5 rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            className="group relative bg-white/5 border border-white/10 hover:-translate-y-1 p-5 rounded-2xl overflow-hidden hover:shadow-2xl  transition-all duration-300"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.5, delay: i * 0.2 }}
           >
             {/* Image with hover zoom */}
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-lg w-full">
               <img
                 src={p.img}
                 alt={p.title}
