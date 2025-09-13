@@ -1,6 +1,6 @@
-# Sunny Sharma Portfolio
+# Sunny Bhull Portfolio
 
-Personal Portfolio Website of Sunny Sharma — built with **React (Vite + Tailwind CSS)**.  
+Personal Portfolio Website of Sunny Bhull — built with **React (Vite + Tailwind CSS)**.  
 This portfolio showcases projects, skills, and ways to contact me.
 
 ## Live Demo
