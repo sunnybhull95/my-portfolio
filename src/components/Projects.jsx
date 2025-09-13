@@ -6,7 +6,7 @@ import img3 from "../assets/portfolio.png";
 
 const projects = [
   {
-    title: "MaganlalChikiClown",
+    title: "MaganlalChikiClone",
     desc: "E-commerce Website",
     img: img,
     link: "https://maganlalchikkiclown.netlify.app",
