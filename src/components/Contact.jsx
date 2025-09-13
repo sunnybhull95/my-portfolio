@@ -10,7 +10,7 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // ✅ Email regex
+    // Email regex
     const emailField = form.current.user_email.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

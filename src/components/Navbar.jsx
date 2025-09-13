@@ -11,7 +11,7 @@ const links = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("#home");
-  const [menuOpen, setMenuOpen] = useState(false); // mobile menu toggle
+  const [menuOpen, setMenuOpen] = useState(false); // mobile & tablet menu toggle
 
   useEffect(() => {
     const onScroll = () => {
@@ -59,8 +59,8 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Desktop Links */}
-        <ul className="hidden md:flex gap-6 text-sm font-semibold">
+        {/* Desktop Links (only large screens) */}
+        <ul className="hidden lg:flex gap-6 text-sm font-semibold">
           <li>
             <a
               href="#home"
@@ -97,8 +97,8 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        {/* Mobile & Tablet Menu Button */}
+        <div className="lg:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white text-2xl focus:outline-none"
@@ -108,9 +108,9 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile & Tablet Menu */}
       {menuOpen && (
-        <ul className="md:hidden bg-gray-900/70 backdrop-blur-lg flex flex-col gap-4 text-center py-6 text-white/80">
+        <ul className="lg:hidden bg-gray-900/70 backdrop-blur-lg flex flex-col gap-4 text-center py-6 text-white/80">
           <li>
             <a
               href="#home"
