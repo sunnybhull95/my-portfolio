@@ -9,7 +9,7 @@ const projects = [
     title: "MaganlalChikiClone",
     desc: "E-commerce Website",
     img: img,
-    link: "https://maganlalchikkiclown.netlify.app",
+    link: "https://maganlalchikkiclone.netlify.app",
   },
   {
     title: "Car-Rental Website",
