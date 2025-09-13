@@ -53,7 +53,7 @@ export default function Navbar() {
           </a>
           <a
             href="#home"
-            className="font-semibold tracking-wide cursor-pointer text-gray-600 hover:text-blue-400 transition-all duration-300"
+            className="font-semibold tracking-wide cursor-pointer text-gray-500 hover:text-blue-400 transition-all duration-300"
           >
             PORTFOLIO
           </a>
@@ -74,7 +74,7 @@ export default function Navbar() {
               }}
               className={`transition ${
                 active === "#home"
-                  ? "text-blue-500 font-semibold border-b-3 border-sky-500"
+                  ? "text-blue-500 font-semibold border-b-3 border-blue-500"
                   : "hover:text-white hover:scale-105"
               }`}
             >
@@ -87,7 +87,7 @@ export default function Navbar() {
                 href={l.href}
                 className={`transition ${
                   active === l.href
-                    ? "text-blue-500 font-semibold border-b-3 border-sky-500"
+                    ? "text-blue-500 font-semibold border-b-3 border-blue-500"
                     : "hover:text-white hover:scale-105"
                 }`}
               >

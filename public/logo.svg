@@ -1,0 +1,18 @@
+<!-- save as s-shadow.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.18"></feDropShadow>
+    </filter>
+    <linearGradient id="g3" x1="0" x2="1">
+      <stop offset="0" stop-color="#06b6d4"></stop>
+      <stop offset="1" stop-color="#3b82f6"></stop>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <text x="50%" y="56%" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="110" font-weight="800" fill="url(#g3)" dominant-baseline="middle">
+      S
+    </text>
+  </g>
+</svg>
