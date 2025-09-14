@@ -50,7 +50,7 @@ export default function Contact() {
         className="text-3xl md:text-4xl text-white font-bold text-center mb-10 inline-block after:block after:w-16 after:h-1 after:bg-gradient-to-l after:from-blue-400 after:to-indigo-500 after:mx-auto after:mt-2"
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8, delay: 0.2 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
       >
         LET’S HAVE A CHAT
       </motion.h2>
@@ -61,7 +61,7 @@ export default function Contact() {
         className="max-w-xl mx-auto space-y-5 backdrop-blur-md p-6 rounded-2xl shadow-inner/60 shadow-blue-500"
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8, delay: 0.2 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
       >
         <input
           type="text"

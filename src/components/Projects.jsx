@@ -50,7 +50,7 @@ export default function Projects() {
         className="grid sm:grid-cols-2 md:grid-cols-3 gap-8"
         initial={{ opacity: 0, y: 80 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8, delay: 0.2 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
       >
         {projects.map((p, i) => (
           <motion.a
@@ -61,7 +61,7 @@ export default function Projects() {
             className="group relative bg-white/5 border border-white/10 hover:-translate-y-1 p-5 rounded-2xl overflow-hidden hover:shadow-2xl  transition-all duration-300"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 0.5, delay: i * 0.3 }}
+            transition={{ duration: 0.5, delay: i * 0.4 }}
           >
             {/* Image with hover zoom */}
             <div className="overflow-hidden rounded-lg w-full">
@@ -94,7 +94,12 @@ export default function Projects() {
       </motion.div>
 
       {/* Coming Soon Loader */}
-      <div className="mt-16 w-full max-w-md mx-auto flex items-center justify-center">
+      <motion.div
+        className="mt-16 w-full max-w-md mx-auto flex items-center justify-center"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={inView ? { opacity: 1, scale: 1 } : {}}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
         <div
           className="w-full backdrop-blur-sm rounded-2xl py-8 px-6 flex flex-col items-center shadow-xl border border-white/10"
           role="status"
@@ -127,7 +132,7 @@ export default function Projects() {
             for updates.
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
