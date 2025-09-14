@@ -9,7 +9,7 @@ export default function About() {
       </h2>
       <p className="text-white/50 max-w-2xl mx-auto mb-6 leading-relaxed">
         I’m a full-stack developer specialized in ReactJS and backend
-        technologies. I enjoy creating interactive, user-friendly web
+        technologies. I enjoy building interactive, user-friendly web
         applications and exploring UI/UX design trends.
       </p>
 
