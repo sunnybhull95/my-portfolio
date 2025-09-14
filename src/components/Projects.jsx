@@ -103,7 +103,7 @@ export default function Projects() {
           {/* Loader */}
           <div className="flex items-center space-x-4">
             <div
-              className="w-14 h-14 rounded-full border-4 border-gray-200 border-t-blue-500 animate-spin"
+              className="w-14 h-14 rounded-full border-4 border-gray-200 border-t-black border-b-black animate-spin"
               aria-hidden="true"
             />
             <div className="text-left">
