@@ -64,18 +64,18 @@ export default function Contact() {
           type="text"
           name="from_name"
           placeholder="Your Name"
-          className="w-full bg-gray-900/50 border border-gray-600 focus:border-white/30 focus:ring-2 focus:ring-white/30 rounded-lg px-4 py-3 text-white outline-none transition"
+          className="w-full bg-gray-900/50 border border-gray-700 focus:border-blue-600  rounded-lg px-4 py-3 text-white outline-none transition"
         />
         <input
           type="email"
           name="user_email"
           placeholder="Email Address"
-          className="w-full bg-gray-900/50 border border-gray-600 focus:border-white/30 focus:ring-2 focus:ring-white/30 rounded-lg px-4 py-3 text-white outline-none transition"
+          className="w-full bg-gray-900/50 border border-gray-700 focus:border-blue-600 rounded-lg px-4 py-3 text-white outline-none transition"
         />
         <textarea
           name="message"
           placeholder="Write your message..."
-          className="w-full bg-gray-900/50 border border-gray-600 focus:border-white/30 focus:ring-2 focus:ring-white/30 rounded-lg px-4 py-3 text-white outline-none transition"
+          className="w-full bg-gray-900/50 border border-gray-700 focus:border-blue-600 rounded-lg px-4 py-3 text-white outline-none transition"
           rows="5"
         />
         <div className="text-center">
