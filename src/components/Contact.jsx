@@ -58,7 +58,7 @@ export default function Contact() {
       <motion.form
         ref={form}
         onSubmit={sendEmail}
-        className="max-w-xl mx-auto space-y-5 hover:shadow-sm transition-all duration-600 backdrop-blur-md p-6 rounded-2xl shadow-xl/10 shadow-blue-400"
+        className="max-w-xl mx-auto space-y-5 backdrop-blur-md p-6 rounded-2xl shadow-inner/60 shadow-blue-500"
       >
         <input
           type="text"
