@@ -110,7 +110,7 @@ export default function Navbar() {
 
       {/* Mobile & Tablet Menu */}
       {menuOpen && (
-        <ul className="lg:hidden bg-gray-900/70 backdrop-blur-lg flex flex-col gap-4 text-center py-6 text-white/80">
+        <ul className="lg:hidden bg-transparent backdrop-blur-lg flex flex-col gap-4 text-center py-6 text-white/80">
           <li>
             <a
               href="#home"
