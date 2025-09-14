@@ -1,21 +1,22 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
   const form = useRef();
 
+  const [popupMessage, setPopupMessage] = useState(null);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Email regex
     const emailField = form.current.user_email.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(emailField)) {
-      alert("Please enter a valid email address.");
+      setPopupMessage("❌ Please enter a valid email address.");
       return;
     }
 
@@ -25,13 +26,18 @@ export default function Contact() {
       })
       .then(
         () => {
-          alert("Message has been sent, we will soon get back to you!");
-          form.current.reset(); // clear form after sending
+          setPopupMessage("✅ Message has been sent, we will get back to you!");
+          form.current.reset();
         },
         (error) => {
-          alert("FAILED...", error.text);
+          setPopupMessage("❌ Failed to send: " + error.text);
         }
       );
+  };
+
+  const handleClosePopup = () => {
+    setPopupMessage(null);
+    window.location.href = "/"; // redirect to home
   };
 
   return (
@@ -81,6 +87,21 @@ export default function Contact() {
           </button>
         </div>
       </motion.form>
+
+      {/* Popup Modal */}
+      {popupMessage && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg max-w-sm w-full text-center">
+            <p className="mb-4">{popupMessage}</p>
+            <button
+              onClick={handleClosePopup}
+              className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-medium"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
