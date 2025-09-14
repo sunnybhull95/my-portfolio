@@ -47,7 +47,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <a
             href="#home"
-            className="h-9 w-9 bg-blue-400 text-white flex items-center justify-center font-bold rounded-xl shadow-md"
+            className="h-9 w-9   bg-gradient-to-r from-indigo-500 to-blue-600  text-white flex items-center justify-center font-bold rounded-xl shadow-md"
           >
             S
           </a>
