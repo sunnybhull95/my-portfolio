@@ -16,7 +16,7 @@ export default function Contact() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(emailField)) {
-      setPopupMessage("❌ Please enter a valid email address.");
+      alert("❌ Please enter a valid email address.");
       return;
     }
 
