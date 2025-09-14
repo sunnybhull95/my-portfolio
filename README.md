@@ -3,7 +3,7 @@
 Personal Portfolio Website of Sunny Bhull — built with **React (Vite + Tailwind CSS)**.  
 This portfolio showcases projects, skills, and ways to contact me.
 
-[🚀]## Live Demo
+##🚀Live Demo
 
 [View Live Portfolio](https://sunnybhull-portfolio.netlify.app)
 
