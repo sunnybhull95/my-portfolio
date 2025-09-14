@@ -61,7 +61,7 @@ export default function Projects() {
             className="group relative bg-white/5 border border-white/10 hover:-translate-y-1 p-5 rounded-2xl overflow-hidden hover:shadow-2xl  transition-all duration-300"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 0.5, delay: i * 0.2 }}
+            transition={{ duration: 0.5, delay: i * 0.3 }}
           >
             {/* Image with hover zoom */}
             <div className="overflow-hidden rounded-lg w-full">

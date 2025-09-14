@@ -9,7 +9,7 @@ export default function Hero() {
     <section
       ref={ref}
       id="home"
-      className="relative max-w-6xl mx-auto px-4 py-24 grid md:grid-cols-2 gap-12 items-center"
+      className="relative max-w-6xl mx-auto px-4 pt-24 pb-5 md:pb-25  grid md:grid-cols-2 gap-12 items-center"
     >
       <div className="absolute inset-0 -z-10 " />
       {/* Text Side */}
