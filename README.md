@@ -3,7 +3,7 @@
 Personal Portfolio Website of Sunny Bhull — built with **React (Vite + Tailwind CSS)**.  
 This portfolio showcases projects, skills, and ways to contact me.
 
-##🚀Live Demo
+## 🚀 Live Demo
 
 [View Live Portfolio](https://sunnybhull-portfolio.netlify.app)
 
@@ -15,7 +15,7 @@ This portfolio showcases projects, skills, and ways to contact me.
 - Contact form integrated with EmailJS for direct messaging.
 - Smooth animations with Framer Motion.
 
-## Technologies Used
+## 🛠 Tech Stack
 
 - **Frontend:** React, Vite, Tailwind CSS, Framer Motion  
 - **Contact Form:** EmailJS  
