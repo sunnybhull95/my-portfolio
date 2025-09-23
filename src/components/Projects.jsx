@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import img from "../assets/Homepage.png";
 import img2 from "../assets/carhomepage.png";
 import img3 from "../assets/portfolio.png";
+import img4 from "../assets/expensetracker.png";
 
 const projects = [
   {
@@ -22,6 +23,12 @@ const projects = [
     desc: "React + TailwindCss + FramerMotion",
     img: img3,
     link: "https://sunnybhull-portfolio.netlify.app/ ",
+  },
+  {
+    title: "Expense Tracker",
+    desc: "React + TailwindCss + SpringBoot + Mysql",
+    img: img4,
+    link: "https://github.com/sunnybhull95/ExpenseTracker",
   },
 ];
 
