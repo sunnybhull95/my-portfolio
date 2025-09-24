@@ -74,7 +74,7 @@ export default function Hero() {
 
           {/* LinkedIn */}
           <motion.a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/sunny-bhull-95754a376/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-800 drop-shadow-lg"
