@@ -15,7 +15,7 @@ export default function About() {
 
       <div className="flex justify-center gap-4">
         <a
-          href="/SunnyBhull(JavaFullStackDev)_resume.pdf" // put your file inside public/resume.pdf
+          href="/SunnyBhull_pdf.pdf" // put your file inside public/resume.pdf
           download="SunnyBhull(JavaFullStackDev)_resume.pdf" // custom name for downloaded file
           className="px-6 py-3 rounded-lg shadow-md 
                  bg-gradient-to-r from-blue-500 to-indigo-600 
