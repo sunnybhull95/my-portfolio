@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -84,16 +84,16 @@ export default function Hero() {
             <FaLinkedin />
           </motion.a>
 
-          {/* Instagram */}
+          {/* Gmail */}
           <motion.a
-            href="https://instagram.com/_sunnyyyyyyyy______"
+            href="mailto:sunnybhull95@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-pink-600 hover:text-pink-700 drop-shadow-lg"
+            className="text-white hover:text-white/50 drop-shadow-lg"
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
           >
-            <FaInstagram />
+            <FaEnvelope />
           </motion.a>
         </div>
       </motion.div>{" "}
