@@ -17,7 +17,7 @@ export default function App() {
       <Projects />
       <Contact />
       <footer className="text-center text-sm text-gray-400 py-8">
-        © {new Date().getFullYear()} Built with React + Tailwind
+        © {new Date().getFullYear()} Sunny Bhull Portfolio — React + Tailwind
       </footer>
     </div>
   );
