@@ -38,7 +38,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="max-w-6xl mx-auto text-center px-4 pt-30 pb-20"
+      className="max-w-6xl mx-auto text-center px-4 pt-25 pb-20"
       ref={ref}
     >
       {/* Heading */}

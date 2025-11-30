@@ -55,7 +55,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="max-w-6xl mx-auto px-4 pb-35 pt-20 text-center"
+      className="max-w-6xl mx-auto px-4 pb-35 pt-15 text-center"
       ref={ref}
     >
       <motion.h2
